@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Reservas y Clientes - Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Gestión de Reservas y Clientes</h1>
+    </header>
+
+    <!-- Contenido del proyecto -->
+    <section id="proyecto-detalles">
+        <h2>Descripción del Proyecto</h2>
+        <p>Este proyecto es una API RESTful desarrollada con <strong>FastAPI</strong> que gestiona la relación entre <strong>Clientes</strong> y <strong>Reservas</strong>, utilizando <strong>MySQL</strong> como base de datos y desplegado en <strong>Docker Desktop</strong>. La arquitectura sigue un modelo en capas, con rutas para operaciones <strong>CRUD</strong> (Crear, Leer, Actualizar, Eliminar), lógica de negocio separada en servicios, y modelos ORM con <strong>SQLAlchemy</strong>. Además, se utiliza <strong>Alembic</strong> para gestionar migraciones de base de datos. La API incluye validaciones como unicidad de datos, limitación de reservas por cliente y control de la relación entre clientes y sus reservas.</p>
+        
+        <h3>Tecnologías Utilizadas</h3>
+        <ul>
+            <li>FastAPI</li>
+            <li>MySQL</li>
+            <li>Docker Desktop</li>
+            <li>SQLAlchemy</li>
+            <li>Alembic</li>
+        </ul>
+
+        <h3>Capturas de Pantalla</h3>
+        <img src="imagenes/Screenshot 2024-09-06 114453.png" style="max-width: 100%; height: auto;">
+
+        <h3>Enlace al Proyecto</h3>
+        <a href="https://github.com/Danistan015/GestionClientesyReservas" target="_blank">Visitar el Proyecto</a>
+
+        <h3>Desafíos y Soluciones</h3>
+        <p>Durante el desarrollo de este proyecto, uno de los mayores desafíos fue implementar una arquitectura en capas efectiva para manejar las operaciones CRUD entre clientes y reservas. Para resolverlo, se diseñaron cuidadosamente las rutas y la lógica de negocio en servicios separados, lo que permitió una mayor modularidad y mantenimiento del código. Además, garantizar la integridad referencial en la base de datos de MySQL requirió la implementación precisa de relaciones y validaciones en los modelos ORM de SQLAlchemy. Otro reto fue optimizar el rendimiento de las consultas y asegurarse de que las migraciones de base de datos con Alembic se realizaran sin problemas. Estos desafíos se superaron mediante pruebas exhaustivas y ajustes continuos en la configuración y el diseño del sistema.</p>
+
+        <h3>Conclusión</h3>
+        <p>Este proyecto me brindó una valiosa experiencia en el desarrollo de APIs RESTful con FastAPI, el manejo de bases de datos MySQL y el despliegue en un entorno Dockerizado. Aprendí a implementar una arquitectura en capas para un diseño más limpio y modular, a utilizar SQLAlchemy y Alembic para una gestión eficaz de datos, y a optimizar el rendimiento y la integridad de la aplicación. En general, este proyecto reforzó mis habilidades en desarrollo backend y en la construcción de soluciones escalables y mantenibles.</p>
+
+    </section>
+
+    <!-- Enlace de regreso a la página principal -->
+    <footer>
+        <a href="index.html">Regresar al Portafolio</a>
+    </footer>
+</body>
+</html>

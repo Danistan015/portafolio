@@ -1,0 +1,226 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f3e5f5; /* Fondo color lila claro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #ab47bc); /* Degradado de morados */
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    position: fixed; /* Fijar el encabezado para que siempre esté en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 3px 0;
+}
+
+nav {
+    margin-top: 0px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #ab47bc; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Color del texto al pasar el mouse */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 80px 20px; /* Espacio en la parte superior para que el contenido no quede oculto por el encabezado fijo */
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(1) {
+    margin-top: 100px; /* Asegura que la primera sección tenga suficiente espacio después del encabezado */
+}
+
+h2 {
+    color: #6a1b9a;
+    font-size: 2.5em;
+    border-bottom: 3px solid #6a1b9a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proyecto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+}
+
+.proyecto-info {
+    padding: 20px;
+    max-width: 60%;
+}
+
+.proyecto-info h3 {
+    color: #6a1b9a;
+    margin-top: 0;
+}
+
+.proyecto-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ab47bc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #ab47bc;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.proyecto-info a:hover {
+    color: #6a1b9a;
+    border-bottom-color: #6a1b9a;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #e1bee7; /* Fondo lila claro */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Estilos para la sección de contacto */
+#contacto {
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido */
+}
+
+#contacto h2 {
+    color: #6a1b9a;
+    font-size: 2.5em;
+    border-bottom: 3px solid #6a1b9a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacto ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#contacto ul li a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+}
+
+#contacto ul li a:hover {
+    color: #ab47bc; /* Color al pasar el mouse */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
